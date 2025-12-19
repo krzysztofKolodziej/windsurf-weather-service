@@ -1,0 +1,26 @@
+windsurf:
+  locations:
+    - name: Jastarnia
+      country: Poland
+      latitude: 54.69606
+      longitude: 18.67873
+
+    - name: Bridgetown
+      country: Barbados
+      latitude: 13.10732
+      longitude: -59.62021
+
+    - name: Fortaleza
+      country: Brazil
+      latitude: -3.71722
+      longitude: -38.54306
+
+    - name: Pissouri
+      country: Cyprus
+      latitude: 34.66942
+      longitude: 32.70132
+
+    - name: Le Morne
+      country: Mauritius
+      latitude: 14.7
+      longitude: -61
