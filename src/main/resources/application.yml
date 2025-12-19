@@ -5,3 +5,5 @@ spring:
 weatherbit:
   base-url: https://api.weatherbit.io/v2.0
   api-key: ${WEATHERBIT_API_KEY:}
+  connect-timeout: 2s
+  read-timeout: 4s
