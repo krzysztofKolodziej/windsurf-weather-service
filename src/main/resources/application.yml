@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: windsurf-weather-service
+
+weatherbit:
+  base-url: https://api.weatherbit.io/v2.0
+  api-key: ${WEATHERBIT_API_KEY:}
