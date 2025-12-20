@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @RequiredArgsConstructor
@@ -37,6 +38,7 @@ public class WindsurfForecastService {
 
         return response.data().stream()
                 .map(mapper::toDailyForecast)
+                .filter(Objects::nonNull)
                 .filter(forecast -> forecast.date().equals(day))
                 .findFirst()
                 .map(forecast -> new BestLocationSelector.Candidate(location, forecast));
