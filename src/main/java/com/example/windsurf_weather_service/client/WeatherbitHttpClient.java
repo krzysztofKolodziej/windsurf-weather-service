@@ -1,7 +1,7 @@
 package com.example.windsurf_weather_service.client;
 
 import com.example.windsurf_weather_service.config.WeatherbitProperties;
-import com.example.windsurf_weather_service.exception.WeatherbitClientException;
+import com.example.windsurf_weather_service.web.error.WeatherbitClientException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.ResourceAccessException;

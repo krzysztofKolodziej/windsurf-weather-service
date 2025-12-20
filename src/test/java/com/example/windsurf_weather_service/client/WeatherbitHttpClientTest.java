@@ -1,7 +1,7 @@
 package com.example.windsurf_weather_service.client;
 
 import com.example.windsurf_weather_service.config.WeatherbitProperties;
-import com.example.windsurf_weather_service.exception.WeatherbitClientException;
+import com.example.windsurf_weather_service.web.error.WeatherbitClientException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.MediaType;

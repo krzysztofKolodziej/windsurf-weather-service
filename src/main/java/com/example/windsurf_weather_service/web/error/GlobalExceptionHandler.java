@@ -1,4 +1,4 @@
-package com.example.windsurf_weather_service.exception;
+package com.example.windsurf_weather_service.web.error;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
