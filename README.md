@@ -22,6 +22,19 @@ locations using domain-specific rules such as wind speed and temperature.
 - Maven
 - Lombok
 
+**Live Deployment**
+
+The application is deployed and publicly available on **Render**
+
+Base URL
+```
+https://windsurf-weather-service.onrender.com
+```
+Example Request - open directly in a browser:
+```
+https://windsurf-weather-service.onrender.com/api/v1/best-location?day=2026-01-01
+```
+
 **Installation and Running**
 
 1. Clone the repository:
