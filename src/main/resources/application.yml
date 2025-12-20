@@ -2,6 +2,9 @@ spring:
   application:
     name: windsurf-weather-service
 
+server:
+  port: ${PORT:8080}
+
 weatherbit:
   base-url: https://api.weatherbit.io/v2.0
   api-key: ${WEATHERBIT_API_KEY:}
