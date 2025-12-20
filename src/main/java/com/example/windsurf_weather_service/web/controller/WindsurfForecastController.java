@@ -1,7 +1,7 @@
-package com.example.windsurf_weather_service.controller;
+package com.example.windsurf_weather_service.web.controller;
 
-import com.example.windsurf_weather_service.dto.BestLocationResponse;
-import com.example.windsurf_weather_service.service.ForecastDayValidator;
+import com.example.windsurf_weather_service.web.dto.BestLocationResponse;
+import com.example.windsurf_weather_service.web.validation.ForecastDayValidator;
 import com.example.windsurf_weather_service.service.WindsurfForecastService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;

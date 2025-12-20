@@ -1,6 +1,6 @@
-package com.example.windsurf_weather_service.service;
+package com.example.windsurf_weather_service.web.validation;
 
-import com.example.windsurf_weather_service.exception.InvalidRequestException;
+import com.example.windsurf_weather_service.web.error.InvalidRequestException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

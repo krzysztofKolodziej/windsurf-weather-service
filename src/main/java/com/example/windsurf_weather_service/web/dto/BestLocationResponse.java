@@ -1,4 +1,4 @@
-package com.example.windsurf_weather_service.dto;
+package com.example.windsurf_weather_service.web.dto;
 
 import java.time.LocalDate;
 

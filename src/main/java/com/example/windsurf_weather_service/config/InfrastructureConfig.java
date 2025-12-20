@@ -6,8 +6,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.web.client.RestClient;
 
+import java.time.Clock;
+
 @Configuration
-public class RestClientConfig {
+public class InfrastructureConfig {
 
     @Bean
     RestClient weatherbitRestClient(WeatherbitProperties properties) {
@@ -20,5 +22,10 @@ public class RestClientConfig {
                 .requestFactory(requestFactory)
                 .defaultHeader("Accept", MediaType.APPLICATION_JSON_VALUE)
                 .build();
+    }
+
+    @Bean
+    public Clock clock() {
+        return Clock.systemDefaultZone();
     }
 }

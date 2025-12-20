@@ -1,12 +1,13 @@
 package com.example.windsurf_weather_service.controller;
 
-import com.example.windsurf_weather_service.exception.GlobalExceptionHandler;
-import com.example.windsurf_weather_service.exception.InvalidRequestException;
+import com.example.windsurf_weather_service.web.error.GlobalExceptionHandler;
+import com.example.windsurf_weather_service.web.error.InvalidRequestException;
 import com.example.windsurf_weather_service.model.DailyForecast;
 import com.example.windsurf_weather_service.model.LocationForecastScore;
 import com.example.windsurf_weather_service.model.WindsurfLocation;
-import com.example.windsurf_weather_service.service.ForecastDayValidator;
+import com.example.windsurf_weather_service.web.validation.ForecastDayValidator;
 import com.example.windsurf_weather_service.service.WindsurfForecastService;
+import com.example.windsurf_weather_service.web.controller.WindsurfForecastController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
