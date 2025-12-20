@@ -1,6 +1,7 @@
 package com.example.windsurf_weather_service.controller;
 
 import com.example.windsurf_weather_service.dto.BestLocationResponse;
+import com.example.windsurf_weather_service.service.ForecastDayValidator;
 import com.example.windsurf_weather_service.service.WindsurfForecastService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -18,6 +19,7 @@ import java.time.LocalDate;
 public class WindsurfForecastController {
 
     private final WindsurfForecastService service;
+    private final ForecastDayValidator dayValidator;
 
     @GetMapping("best-location")
     public ResponseEntity<BestLocationResponse> getBestLocation(
@@ -25,6 +27,8 @@ public class WindsurfForecastController {
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
             LocalDate day
     ) {
+        dayValidator.validate(day);
+
         return service.findBestLocation(day)
                 .map(result -> ResponseEntity.ok(
                         new BestLocationResponse(
